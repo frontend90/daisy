@@ -1,0 +1,44 @@
+@font-face 
+  font-family: 'fa-solid-900'
+  src: url('../fonts/fa-solid-900.ttf')
+@mixin solid
+  font-family: 'fa-solid-900'
+@font-face 
+  font-family: 'fa-brands-400'
+  src: url('../fonts/fa-brands-400.ttf')
+@mixin brand
+  font-family: 'fa-brands-400'
+@font-face 
+  font-family: 'GothamPro-Bold'
+  src: url('../fonts/GothamPro-Bold.ttf')
+@mixin got_bold
+  font-family: 'GothamPro-Bold'
+@font-face 
+  font-family: 'PFEncoreSansPro-Bold'
+  src: url('../fonts/PFEncoreSansPro-Bold.ttf')
+@mixin pfe_bold
+  font-family: 'PFEncoreSansPro-Bold'
+@font-face 
+  font-family: 'PFEncoreSansPro-Light'
+  src: url('../fonts/PFEncoreSansPro-Light.ttf')
+@mixin pfe_light
+  font-family: 'PFEncoreSansPro-Light'
+@font-face 
+  font-family: 'PFEncoreSansPro-Medium'
+  src: url('../fonts/PFEncoreSansPro-Medium.ttf')
+@mixin pfe_med 
+  font-family: 'PFEncoreSansPro-Medium'
+@font-face 
+  font-family: 'PFEncoreSansPro-Thin'
+  src: url('../fonts/PFEncoreSansPro-Thin.ttf')
+@mixin pfe_thin 
+  font-family: 'PFEncoreSansPro-Thin'
+body 
+  +pfe_light 
+  font-size: 15px 
+  color: #9e9898
+  &.no-scroll 
+    overflow: hidden
+.container 
+  max-width: 950px 
+  margin: auto
