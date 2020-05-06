@@ -2,6 +2,16 @@
   background: url(../img/header/bg.png) no-repeat 
   background-size: cover 
   height: 100vh 
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    background: url(../img/header/mouse.png) no-repeat 
+    height: 345px 
+    width: 120px 
+    background-position: 100% 100%
+    left: calc(55% + 10px)
+    bottom: 0
   & .header-nav 
     display: flex 
     align-items: center
@@ -63,4 +73,52 @@
             border-bottom: 4px solid #fc635e
           &:first-of-type
             margin-left: 0
+  & .header-title 
+    margin-top: 320px 
+    text-align: center
+    & h2 
+      position: relative
+      +pfe_bold 
+      color: #ffffff
+      font-size: 51px 
+      text-transform: uppercase
+      white-space: nowrap
+      & span 
+        color: #fc635e
+      &::before
+        content: ''
+        position: absolute
+        left: 0
+        top: 50%
+        transform: translateY(-50%)
+        width: 100px 
+        height: 10px 
+        background: rgba(#ffffff,.2)
+      &::after 
+        content: ''
+        position: absolute
+        right: 0
+        top: 50%
+        transform: translateY(-50%)
+        width: 100px 
+        height: 10px 
+        background: rgba(#ffffff,.2)
+    & p 
+      font-size: 24px 
+      color: #ffffff
+      letter-spacing: -.12px 
+    & .btn 
+      margin-top: 40px 
+      z-index: 1
+      & button 
+        width: 200px 
+        height: 55px 
+        border-radius: 7px 
+        border: 2px solid #fc635e
+        font-size: 24px 
+        color: #fc635e
+        letter-spacing: -.12px 
+        transition: .3s linear 
+        &:hover
+          opacity: .6
 

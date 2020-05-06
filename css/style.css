@@ -52,6 +52,18 @@ body.no-scroll {
   background: url(../img/header/bg.png) no-repeat;
   background-size: cover;
   height: 100vh;
+  position: relative;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  background: url(../img/header/mouse.png) no-repeat;
+  height: 345px;
+  width: 120px;
+  background-position: 100% 100%;
+  left: calc(55% + 10px);
+  bottom: 0;
 }
 
 .header .header-nav {
@@ -156,9 +168,93 @@ body.no-scroll {
   margin-left: 0;
 }
 
+.header .header-title {
+  margin-top: 320px;
+  text-align: center;
+}
+
+.header .header-title h2 {
+  position: relative;
+  font-family: 'PFEncoreSansPro-Bold';
+  color: #ffffff;
+  font-size: 51px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.header .header-title h2 span {
+  color: #fc635e;
+}
+
+.header .header-title h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.header .header-title h2::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.header .header-title p {
+  font-size: 24px;
+  color: #ffffff;
+  letter-spacing: -.12px;
+}
+
+.header .header-title .btn {
+  margin-top: 40px;
+  z-index: 1;
+}
+
+.header .header-title .btn button {
+  width: 200px;
+  height: 55px;
+  border-radius: 7px;
+  border: 2px solid #fc635e;
+  font-size: 24px;
+  color: #fc635e;
+  letter-spacing: -.12px;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.header .header-title .btn button:hover {
+  opacity: .6;
+}
+
 @media screen and (max-width: 1000px) {
   .container {
     max-width: 95%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .header::before {
+    display: none;
+  }
+  .header .header-title h2::before, .header .header-title h2::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .header .header-title h2 {
+    font-size: 40px;
   }
 }
 
@@ -250,6 +346,16 @@ body.no-scroll {
   }
   .header .header-nav .menu .menu-link a:hover {
     border-bottom: none;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .header .header-title h2 {
+    font-size: 30px;
+    white-space: normal;
+  }
+  .header .header-title p {
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
