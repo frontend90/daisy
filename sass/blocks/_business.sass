@@ -1,0 +1,41 @@
+.business 
+  background: url(../img/business/bg.png) bottom no-repeat 
+  background-size: cover 
+  height: 575px 
+  & .title 
+    display: flex 
+    justify-content: center
+    align-items: center
+    height: 100%
+    flex-direction: column 
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 385px 
+      border: 8px solid rgba(#ffffff,.1)
+      z-index: 0
+    & h3 
+      text-transform: uppercase
+      +pfe_bold 
+      font-size: 51px 
+      color: #ffffff
+      letter-spacing: -.26px 
+      & span 
+        color: #fc635e
+    & .btn 
+      margin-top: 30px 
+      z-index: 1
+      & button 
+        width: 205px 
+        height: 55px 
+        border-radius: 7px 
+        border: 3px solid #fc635e
+        font-size: 24px 
+        color: #fc635e
+        letter-spacing: -.12px 
+        transition: .3s linear 
+        &:hover 
+          opacity: .7
+

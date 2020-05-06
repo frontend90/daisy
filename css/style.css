@@ -46,6 +46,7 @@ body.no-scroll {
 .container {
   max-width: 950px;
   margin: auto;
+  height: 100%;
 }
 
 .header {
@@ -237,6 +238,189 @@ body.no-scroll {
   opacity: .6;
 }
 
+.about {
+  padding: 60px 0 90px 0;
+}
+
+.about .title {
+  text-align: center;
+}
+
+.about .title h3 {
+  color: #868686;
+  text-transform: uppercase;
+  font-family: 'PFEncoreSansPro-Medium';
+  font-size: 28px;
+  letter-spacing: -.14px;
+  border-bottom: 1px solid #adadad;
+  display: inline-block;
+}
+
+.about .title h3 span {
+  color: #fc635e;
+}
+
+.about .title p {
+  margin: 15px auto 0;
+  width: 510px;
+  font-size: 20px;
+  letter-spacing: -.1px;
+  color: #adadad;
+}
+
+.about .about-wrap {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about .about-wrap .card {
+  text-align: center;
+  width: 205px;
+}
+
+.about .about-wrap .card .icon {
+  width: 90px;
+  height: 60px;
+  background: #fc635e;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+.about .about-wrap .card .icon::before, .about .about-wrap .card .icon::after {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 0;
+  border-left: 45px solid transparent;
+  border-right: 45px solid transparent;
+}
+
+.about .about-wrap .card .icon::before {
+  top: -22.5px;
+  border-bottom: 22.5px solid #fc635e;
+}
+
+.about .about-wrap .card .icon::after {
+  bottom: -22.5px;
+  border-top: 22.5px solid #fc635e;
+}
+
+.about .about-wrap .card .icon .fas {
+  font-family: 'fa-solid-900';
+  font-size: 37px;
+  color: #ffffff;
+}
+
+.about .about-wrap .card h5 {
+  margin-top: 45px;
+  text-transform: uppercase;
+  font-family: 'PFEncoreSansPro-Medium';
+  font-size: 20px;
+  letter-spacing: -.1px;
+  color: #868686;
+  position: relative;
+}
+
+.about .about-wrap .card h5::before {
+  content: '';
+  position: absolute;
+  background: #adadad;
+  height: 1px;
+  width: 60px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -5px;
+}
+
+.about .about-wrap .card p {
+  margin-top: 15px;
+  line-height: 1.2;
+  color: #adadad;
+  letter-spacing: -.08px;
+}
+
+.business {
+  background: url(../img/business/bg.png) bottom no-repeat;
+  background-size: cover;
+  height: 575px;
+}
+
+.business .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.business .title::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 385px;
+  border: 8px solid rgba(255, 255, 255, 0.1);
+  z-index: 0;
+}
+
+.business .title h3 {
+  text-transform: uppercase;
+  font-family: 'PFEncoreSansPro-Bold';
+  font-size: 51px;
+  color: #ffffff;
+  letter-spacing: -.26px;
+}
+
+.business .title h3 span {
+  color: #fc635e;
+}
+
+.business .title .btn {
+  margin-top: 30px;
+  z-index: 1;
+}
+
+.business .title .btn button {
+  width: 205px;
+  height: 55px;
+  border-radius: 7px;
+  border: 3px solid #fc635e;
+  font-size: 24px;
+  color: #fc635e;
+  letter-spacing: -.12px;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.business .title .btn button:hover {
+  opacity: .7;
+}
+
 @media screen and (max-width: 1000px) {
   .container {
     max-width: 95%;
@@ -252,8 +436,29 @@ body.no-scroll {
   }
 }
 
+@media screen and (max-width: 950px) {
+  .about .about-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 30px;
+  }
+  .about .about-wrap .card {
+    -ms-flex-preferred-size: 35%;
+        flex-basis: 35%;
+    margin-top: 50px;
+  }
+}
+
 @media screen and (max-width: 740px) {
   .header .header-title h2 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .business .title h3 {
     font-size: 40px;
   }
 }
@@ -356,6 +561,45 @@ body.no-scroll {
   }
   .header .header-title p {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .business .title h3 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .about .title p {
+    width: 100%;
+  }
+  .about .about-wrap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about .about-wrap .card {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .business .title h3 {
+    font-size: 20px;
+  }
+  .business .title .btn button {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .about .title h3 {
+    font-size: 25px;
+  }
+  .about .title p {
+    font-size: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */

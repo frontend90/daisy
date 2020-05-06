@@ -1,0 +1,76 @@
+.about
+  padding: 60px 0 90px 0
+  & .title 
+    text-align: center
+    & h3 
+      color: #868686
+      text-transform: uppercase
+      +pfe_med
+      font-size: 28px 
+      letter-spacing: -.14px 
+      border-bottom: 1px solid #adadad
+      display: inline-block 
+      & span 
+        color: #fc635e  
+    & p 
+      margin: 15px auto 0
+      width: 510px 
+      font-size: 20px 
+      letter-spacing: -.1px 
+      color: #adadad
+  & .about-wrap 
+    margin-top: 80px 
+    display: flex 
+    justify-content: space-between
+    & .card 
+      text-align: center
+      width: 205px 
+      & .icon 
+        width: 90px
+        height: 60px
+        background: #fc635e
+        position: relative
+        display: flex 
+        align-items: center
+        justify-content: center
+        margin: auto
+        &::before, &::after
+          content: ''
+          width: 0
+          height: 0
+          position: absolute
+          left: 0
+          border-left: 45px solid transparent
+          border-right: 45px solid transparent
+        &::before 
+          top: -22.5px
+          border-bottom: 22.5px solid #fc635e
+        &::after 
+          bottom: -22.5px
+          border-top: 22.5px solid #fc635e
+        & .fas 
+          +solid 
+          font-size: 37px 
+          color: #ffffff
+      & h5 
+        margin-top: 45px 
+        text-transform: uppercase
+        +pfe_med 
+        font-size: 20px 
+        letter-spacing: -.1px 
+        color: #868686 
+        position: relative
+        &::before
+          content: ''
+          position: absolute
+          background: #adadad
+          height: 1px 
+          width: 60px
+          left: 50%
+          transform: translateX(-50%) 
+          bottom: -5px
+      & p 
+        margin-top: 15px  
+        line-height: 1.2 
+        color: #adadad
+        letter-spacing: -.08px 
