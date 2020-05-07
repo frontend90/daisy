@@ -28,3 +28,17 @@ $('.menu-link a').click(function () {
   $('.burger').removeClass('active');
   $('body').removeClass('no-scroll');
 });
+
+/*---------------- фильтр portfolio   ---------------*/
+$(function () {
+  $('.portfolio-nav a').click(function (event) {
+    event.preventDefault();
+    var get_id = this.id;
+    var get_current = $('.card.' + get_id);
+    $('.card').not(get_current).hide(500);
+    get_current.show(500);
+  });
+  $('#all').click(function () {
+    $('.card').show(500);
+  });
+});
