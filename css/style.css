@@ -1070,6 +1070,101 @@ body.no-scroll {
   opacity: .7;
 }
 
+.team {
+  background: #f2f2f2;
+  padding: 55px 0 110px 0;
+}
+
+.team .title {
+  text-align: center;
+}
+
+.team .title h3 {
+  text-transform: uppercase;
+  font-size: 28px;
+  font-family: 'PFEncoreSansPro-Medium';
+  letter-spacing: -.14px;
+  color: #565656;
+  border-bottom: 1px solid #757575;
+  display: inline-block;
+}
+
+.team .title h3 span {
+  color: #fc635e;
+}
+
+.team .team-wrap {
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.team .team-wrap .card {
+  text-align: center;
+}
+
+.team .team-wrap .card .content {
+  margin-top: 20px;
+}
+
+.team .team-wrap .card .content h5 {
+  font-family: 'PFEncoreSansPro-Medium';
+  font-size: 28px;
+  color: #565656;
+  letter-spacing: -.14px;
+}
+
+.team .team-wrap .card .content h5 span {
+  color: #fc635e;
+}
+
+.team .team-wrap .card .content p {
+  font-size: 20px;
+  letter-spacing: -.1px;
+  color: #565656;
+  margin-top: 5px;
+}
+
+.team .team-wrap .card .content .social {
+  margin-top: 10px;
+}
+
+.team .team-wrap .card .content .social a {
+  margin-left: 15px;
+}
+
+.team .team-wrap .card .content .social a:first-of-type {
+  margin-left: 0;
+}
+
+.team .team-wrap .card .content .social a .fab {
+  font-family: 'fa-brands-400';
+  width: 37px;
+  height: 37px;
+  background: #565656;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #f2f2f2;
+  font-size: 18px;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.team .team-wrap .card .content .social a .fab:hover {
+  color: #fc635e;
+}
+
 @media screen and (max-width: 1000px) {
   .container {
     max-width: 95%;
@@ -1135,6 +1230,21 @@ body.no-scroll {
   }
   .marketing .marketing-wrap .img {
     display: none;
+  }
+  .team .team-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 20px;
+  }
+  .team .team-wrap .card {
+    margin-top: 50px;
   }
 }
 
