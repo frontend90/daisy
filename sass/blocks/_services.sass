@@ -1,0 +1,48 @@
+.services
+  padding: 210px 0 250px 0 
+  & .services-slider-wrap
+    position: relative
+    & .services-slider
+      & .slick-list 
+        overflow: hidden
+        & .slick-track 
+          display: flex 
+          & .services-slider-block 
+            display: flex 
+            align-items: center
+            justify-content: space-around
+            & .desc 
+              max-width: 320px 
+              & p 
+                letter-spacing: -.08px 
+                color: #767676
+                line-height: 1.4 
+            & .img 
+              width: 160px 
+              height: 185px 
+              & img 
+                width: 100%
+                height: 100%
+            & .name 
+              width: 320px 
+              & h5 
+                +pfe_med 
+                font-size: 28px 
+                color: #818181
+                letter-spacing: -.14px 
+                & span 
+                  color: #fc635e
+              & p 
+                font-size: 20px 
+                letter-spacing: -.1px 
+                color: #818181
+    & .btn 
+      position: absolute
+      bottom: -75px
+      left: 50%
+      transform: translateX(-50%)
+      & button 
+        margin-left: 25px 
+        &:first-of-type
+          margin-left: 0
+              

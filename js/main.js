@@ -42,3 +42,11 @@ $(function () {
     $('.card').show(500);
   });
 });
+
+/************    services slick      **************/
+$('.services-slider').slick({
+  prevArrow: $('.services-arrow-left'),
+  nextArrow: $('.services-arrow-right'),
+  dots: false,
+  autoplay: false
+});

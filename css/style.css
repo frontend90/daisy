@@ -1165,6 +1165,240 @@ body.no-scroll {
   color: #fc635e;
 }
 
+.services {
+  padding: 210px 0 250px 0;
+}
+
+.services .services-slider-wrap {
+  position: relative;
+}
+
+.services .services-slider-wrap .services-slider .slick-list {
+  overflow: hidden;
+}
+
+.services .services-slider-wrap .services-slider .slick-list .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.services .services-slider-wrap .services-slider .slick-list .slick-track .services-slider-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.services .services-slider-wrap .services-slider .slick-list .slick-track .services-slider-block .desc {
+  max-width: 320px;
+}
+
+.services .services-slider-wrap .services-slider .slick-list .slick-track .services-slider-block .desc p {
+  letter-spacing: -.08px;
+  color: #767676;
+  line-height: 1.4;
+}
+
+.services .services-slider-wrap .services-slider .slick-list .slick-track .services-slider-block .img {
+  width: 160px;
+  height: 185px;
+}
+
+.services .services-slider-wrap .services-slider .slick-list .slick-track .services-slider-block .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.services .services-slider-wrap .services-slider .slick-list .slick-track .services-slider-block .name {
+  width: 320px;
+}
+
+.services .services-slider-wrap .services-slider .slick-list .slick-track .services-slider-block .name h5 {
+  font-family: 'PFEncoreSansPro-Medium';
+  font-size: 28px;
+  color: #818181;
+  letter-spacing: -.14px;
+}
+
+.services .services-slider-wrap .services-slider .slick-list .slick-track .services-slider-block .name h5 span {
+  color: #fc635e;
+}
+
+.services .services-slider-wrap .services-slider .slick-list .slick-track .services-slider-block .name p {
+  font-size: 20px;
+  letter-spacing: -.1px;
+  color: #818181;
+}
+
+.services .services-slider-wrap .btn {
+  position: absolute;
+  bottom: -75px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.services .services-slider-wrap .btn button {
+  margin-left: 25px;
+}
+
+.services .services-slider-wrap .btn button:first-of-type {
+  margin-left: 0;
+}
+
+.contact {
+  background: url(../img/contact/bg.png) no-repeat;
+  background-size: cover;
+  height: 338px;
+}
+
+.contact .contact-content {
+  position: relative;
+}
+
+.contact .contact-content .block {
+  position: absolute;
+  width: 184px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: calc(-105px/2);
+}
+
+.contact .contact-content .block .content {
+  height: 105px;
+  padding: 0 0px;
+  border-right: 10px solid #fe8682;
+  border-left: 10px solid #fe8682;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fc635e;
+  z-index: 1;
+}
+
+.contact .contact-content .block .content h5 {
+  font-family: 'PFEncoreSansPro-Medium';
+  font-size: 27px;
+  color: #ffffff;
+  letter-spacing: -.14px;
+  z-index: 1;
+}
+
+.contact .contact-content .block .content p {
+  letter-spacing: -.08px;
+  color: #ffffff;
+  line-height: 1.4;
+  z-index: 1;
+}
+
+.contact .contact-content .block::before, .contact .contact-content .block::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-right: 10px solid #fe8682;
+  border-left: 10px solid #fe8682;
+  background: #fc635e;
+}
+
+.contact .contact-content .block::before {
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+
+.contact .contact-content .block::after {
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+}
+
+.footer {
+  background: url(../img/footer/bg.png) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.footer .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: calc(210px/2) 0;
+}
+
+.footer .title .icon-footer {
+  width: 80px;
+  height: 45px;
+  background: rgba(252, 99, 94, 0.97);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .title .icon-footer::before, .footer .title .icon-footer::after {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+}
+
+.footer .title .icon-footer::before {
+  top: -20px;
+  border-bottom: 20px solid rgba(252, 99, 94, 0.97);
+}
+
+.footer .title .icon-footer::after {
+  bottom: -20px;
+  border-top: 20px solid rgba(252, 99, 94, 0.97);
+}
+
+.footer .title .icon-footer h2 {
+  font-size: 50px;
+  font-family: 'PFEncoreSansPro-Bold';
+  color: #000000;
+}
+
+.footer .title h3 {
+  margin-left: 20px;
+  font-size: 32px;
+  font-family: 'PFEncoreSansPro-Bold';
+  letter-spacing: -.16px;
+}
+
+.footer .title h3 a {
+  color: #ffffff;
+}
+
 @media screen and (max-width: 1000px) {
   .container {
     max-width: 95%;
@@ -1202,6 +1436,25 @@ body.no-scroll {
   .about .about-wrap .card {
     -ms-flex-preferred-size: 35%;
         flex-basis: 35%;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .services .services-slider-wrap .services-slider .slick-list .slick-track .services-slider-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .services .services-slider-wrap .services-slider .slick-list .slick-track .services-slider-block .img {
+    margin-top: 50px;
+  }
+  .services .services-slider-wrap .services-slider .slick-list .slick-track .services-slider-block .name {
     margin-top: 50px;
   }
 }
