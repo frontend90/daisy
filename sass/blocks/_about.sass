@@ -25,52 +25,70 @@
     & .card 
       text-align: center
       width: 205px 
-      & .icon 
-        width: 90px
-        height: 60px
-        background: #fc635e
+      cursor: pointer
+      &:hover .about-hexagon 
+        background: #ffffff
+        border-color: #fc635e
+      &:hover .about-hexagon .fas 
+        color: #fc635e
+      &:hover .about-hexagon::before
+        border-color: #fc635e 
+      &:hover .about-hexagon::after 
+        border-color: #fc635e 
+      & .about-hexagon
         position: relative
-        display: flex 
-        align-items: center
-        justify-content: center
+        width: 100px
+        height: 57.74px
+        background: #fc635e
+        border-left: solid 5px #fe8682
+        border-right: solid 5px #fe8682
         margin: auto
         &::before, &::after
           content: ''
-          width: 0
-          height: 0
           position: absolute
-          left: 0
-          border-left: 45px solid transparent
-          border-right: 45px solid transparent
+          z-index: 1
+          width: 70.71px
+          height: 70.71px
+          transform: scaleY(0.5774) rotate(-45deg)
+          background: inherit
+          left: 9.6447px
         &::before 
-          top: -22.5px
-          border-bottom: 22.5px solid #fc635e
+          top: -35.3553px
+          border-top: solid 7.0711px #fe8682
+          border-right: solid 7.0711px #fe8682
         &::after 
-          bottom: -22.5px
-          border-top: 22.5px solid #fc635e
+          bottom: -35.3553px
+          border-bottom: solid 7.0711px #fe8682
+          border-left: solid 7.0711px #fe8682
         & .fas 
           +solid 
           font-size: 37px 
           color: #ffffff
-      & h5 
-        margin-top: 45px 
-        text-transform: uppercase
-        +pfe_med 
-        font-size: 20px 
-        letter-spacing: -.1px 
-        color: #868686 
-        position: relative
-        &::before
-          content: ''
+          z-index: 2
           position: absolute
-          background: #adadad
-          height: 1px 
-          width: 60px
+          top: 50%
           left: 50%
-          transform: translateX(-50%) 
-          bottom: -5px
-      & p 
-        margin-top: 15px  
-        line-height: 1.2 
-        color: #adadad
-        letter-spacing: -.08px 
+          transform: translate(-50%,-50%)
+      & .desc 
+        & h5 
+          margin-top: 45px 
+          text-transform: uppercase
+          +pfe_med 
+          font-size: 20px 
+          letter-spacing: -.1px 
+          color: #868686 
+          position: relative
+          &::before
+            content: ''
+            position: absolute
+            background: #adadad
+            height: 1px 
+            width: 60px
+            left: 50%
+            transform: translateX(-50%) 
+            bottom: -5px
+        & p 
+          margin-top: 15px  
+          line-height: 1.2 
+          color: #adadad
+          letter-spacing: -.08px 

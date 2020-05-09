@@ -1,89 +1,90 @@
-.header 
-  background: url(../img/header/bg.png) no-repeat 
-  background-size: cover 
-  height: 100vh 
+.header
+  background: url(../img/header/bg.png) no-repeat
+  background-size: cover
+  height: 100vh
   position: relative
   &::before
     content: ''
     position: absolute
-    background: url(../img/header/mouse.png) no-repeat 
-    height: 345px 
-    width: 120px 
+    background: url(../img/header/mouse.png) no-repeat
+    height: 345px
+    width: 120px
     background-position: 100% 100%
     left: calc(55% + 10px)
     bottom: 0
-  & .header-nav 
-    display: flex 
+  & .header-nav
+    display: flex
     align-items: center
     justify-content: space-between
-    padding-top: 70px 
-    & .logo 
-      display: flex 
+    padding-top: 70px
+    & .logo
+      display: flex
       align-items: center
-      & .logo-icon  
-        width: 60px
-        height: 40px
-        background: rgba(252,99,94,.97)
+      & .logo-hexagon
         position: relative
-        display: flex 
-        align-items: center
-        justify-content: center
+        width: 60px
+        height: 34.64px
+        background: #fc635e
         &::before, &::after
           content: ''
-          width: 0
-          height: 0
           position: absolute
-          left: 0
+          width: 0
           border-left: 30px solid transparent
           border-right: 30px solid transparent
-        &::before 
-          top: -15px
-          border-bottom: 15px solid rgba(252,99,94,.97)
-        &::after 
-          bottom: -15px
-          border-top: 15px solid rgba(252,99,94,.97)
-        & h2 
-          +pfe_bold 
+        &::before
+          bottom: 100%
+          border-bottom: 17.32px solid #fc635e
+        &::after
+          top: 100%
+          width: 0
+          border-top: 17.32px solid #fc635e
+        & h2
+          +pfe_bold
           color: #0c252d
-          font-size: 35px 
-          letter-spacing: 1.42px 
-      & h3 
-        margin-left: 15px 
-        +got_bold 
-        font-size: 24px 
-        letter-spacing: -.12px 
-        & a 
+          font-size: 35px
+          letter-spacing: 1.42px
+          position: absolute
+          z-index: 1
+          top: 50%
+          left: 50%
+          transform: translate(-50%,-50%)
+      & h3
+        margin-left: 15px
+        +got_bold
+        font-size: 24px
+        letter-spacing: -.12px
+        & a
           color: #ffffff
-    & .menu 
-      & .burger 
-        display: none 
-      & .menu-link 
-        & a 
+    & .menu
+      & .burger
+        display: none
+      & .menu-link
+        & a
           text-transform: uppercase
-          +pfe_thin 
+          +pfe_thin
           color: #ffffff
-          font-size: 16px 
-          letter-spacing: .64px 
-          margin-left: 35px 
-          padding-bottom: 5px 
-          border-bottom: 4px solid transparent 
-          transition: .3s linear 
+          font-size: 16px
+          letter-spacing: .64px
+          margin-left: 35px
+          padding-bottom: 5px
+          border-bottom: 4px solid transparent
+          transition: .3s linear
           &:hover
             color: #fc635e
             border-bottom: 4px solid #fc635e
           &:first-of-type
             margin-left: 0
-  & .header-title 
-    margin-top: 320px 
+  & .header-title
+    margin-top: 320px
     text-align: center
-    & h2 
+    & h2
       position: relative
-      +pfe_bold 
+      +pfe_bold
       color: #ffffff
-      font-size: 51px 
+      font-size: 51px
       text-transform: uppercase
       white-space: nowrap
-      & span 
+      & span
         color: #fc635e
       &::before
         content: ''
@@ -91,34 +92,33 @@
         left: 0
         top: 50%
         transform: translateY(-50%)
-        width: 100px 
-        height: 10px 
+        width: 100px
+        height: 10px
         background: rgba(#ffffff,.2)
-      &::after 
+      &::after
         content: ''
         position: absolute
         right: 0
         top: 50%
         transform: translateY(-50%)
-        width: 100px 
-        height: 10px 
+        width: 100px
+        height: 10px
         background: rgba(#ffffff,.2)
-    & p 
-      font-size: 24px 
+    & p
+      font-size: 24px
       color: #ffffff
-      letter-spacing: -.12px 
-    & .btn 
-      margin-top: 40px 
+      letter-spacing: -.12px
+    & .btn
+      margin-top: 40px
       z-index: 1
-      & button 
-        width: 200px 
-        height: 55px 
-        border-radius: 7px 
+      & button
+        width: 200px
+        height: 55px
+        border-radius: 7px
         border: 2px solid #fc635e
-        font-size: 24px 
+        font-size: 24px
         color: #fc635e
-        letter-spacing: -.12px 
-        transition: .3s linear 
+        letter-spacing: -.12px
+        transition: .3s linear
         &:hover
           opacity: .6
-

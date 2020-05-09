@@ -3,49 +3,45 @@
   background-size: cover 
   height: 338px 
   & .contact-content
-    position: relative
-    & .block 
-      position: absolute
-      width: 184px  
-      left: 50%
-      transform: translateX(-50%)
-      margin-top: calc(-105px/2)
-      & .content
-        height: 105px 
-        padding: 0 0px 
-        border-right: 10px solid #fe8682
-        border-left: 10px solid #fe8682
+    display: flex 
+    justify-content: center
+    & .contact-hexagon
+      position: relative
+      width: 210px
+      height: 121.24px
+      background: #fc635e
+      border-left: solid 10px #fe8682
+      border-right: solid 10px #fe8682
+      margin-top: calc(-121.24px/2)
+      & .desc 
+        z-index: 2
+        position: absolute
+        width: 100%
         text-align: center
-        display: flex 
-        flex-direction: column 
-        justify-content: center
-        background: #fc635e
-        z-index: 1
         & h5 
           +pfe_med 
           font-size: 27px 
           color: #ffffff
           letter-spacing: -.14px 
-          z-index: 1
+          margin-bottom: 10px 
         & p 
-          letter-spacing: -.08px 
           color: #ffffff
-          line-height: 1.4 
-          z-index: 1
-      &::before, &::after
+          letter-spacing: -.08px 
+      &::before, &::after 
         content: ''
         position: absolute
-        top: 0
-        left: 0
-        width: 100%
-        height: 100%
-        border-right: 10px solid #fe8682
-        border-left: 10px solid #fe8682
-        background: #fc635e
-      &::before
-        transform: rotate(60deg)
+        z-index: 1
+        width: 148.49px
+        height: 148.49px
+        transform: scaleY(0.5774) rotate(-45deg)
+        background: inherit
+        left: 20.7538px
+      &::before 
+        top: -74.2462px
+        border-top: solid 14.1421px #fe8682
+        border-right: solid 14.1421px #fe8682
       &::after
-        transform: rotate(-60deg)
-
-
+        bottom: -74.2462px
+        border-bottom: solid 14.1421px #fe8682
+        border-left: solid 14.1421px #fe8682
 
